@@ -36,6 +36,5 @@ public class P001_ValidPalindrome{
         }
     }
 
-
 }
 
