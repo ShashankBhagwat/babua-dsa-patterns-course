@@ -41,6 +41,7 @@ Links will be updated as the series goes live!
 | 0 | Course Introduction | [Watch Now](https://www.youtube.com/@CodingwithCTOBhaiya) | [Notes](https://github.com/team-codebug/babua-dsa-patterns-course/blob/main/0_Day/0_Intro_To_Patterns_Course.excalidraw.png) | ✅ |
 | 1 | Two Pointers Theory | [Watch Now](https://www.youtube.com/watch?v=Elnhh8cC2vM) | [Notes](https://github.com/team-codebug/babua-dsa-patterns-course/blob/main/1_Day/1_Two_Pointer_Pattern_Theory.excalidraw.svg) | ✅ |
 | X | Disclaimer: NO CONTROVERSY!!! (Onboarding + Beginners DSA Sheet) | [Watch Now](https://youtu.be/vJ2xa878E-M) | [Notes](https://github.com/team-codebug/babua-dsa-patterns-course/blob/main/we_need_to_talk.svg) | ✅ |
+| 2 | Two Pointers Questions | [Watch Now](https://www.youtube.com/watch?v=Yi90cuHYyWQ) | [Notes](https://github.com/team-codebug/babua-dsa-patterns-course/tree/main/2_Day) | ✅ |
 
 ---
 
