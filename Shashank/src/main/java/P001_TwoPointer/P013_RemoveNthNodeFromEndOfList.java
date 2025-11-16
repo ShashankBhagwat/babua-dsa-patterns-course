@@ -19,12 +19,11 @@ public class P013_RemoveNthNodeFromEndOfList {
 
         int n = 2; // remove 2nd node from end (removes '4')
 
-        ListNode newHead = s.removeNthFromEnd(head, n);
+        ListNode newHead = s.removeNthFromEnd1(head, n);
 
         System.out.println("\nList After Removing " + n + "th Node From End:");
         printList(newHead);
     }
-
 
     // Utility function to print the list
     static void printList(ListNode head) {
@@ -36,10 +35,9 @@ public class P013_RemoveNthNodeFromEndOfList {
         System.out.println();
     }
 
-
     // Your solution code
     static class Solution {
-        public ListNode removeNthFromEnd(ListNode head, int n) {
+        public ListNode removeNthFromEnd2(ListNode head, int n) {
 
             int size = 0;
             ListNode temp = head;
@@ -48,7 +46,7 @@ public class P013_RemoveNthNodeFromEndOfList {
                 size++;
             }
 
-            if(size == n)
+            if (size == n)
                 return head;
 
             ListNode curr = head;
@@ -60,9 +58,28 @@ public class P013_RemoveNthNodeFromEndOfList {
             return head;
         }
 
+        public ListNode removeNthFromEnd1(ListNode head, int n) {
+
+            ListNode dummy = new ListNode(0);
+            dummy.next = head;
+
+            ListNode person1 = dummy;
+            ListNode person2 = dummy;
+
+            int i = 0;
+            while (person2.next != null) {
+                if (i >= n) {
+                    person1 = person1.next;
+                }
+                person2 = person2.next;
+                i++;
+            }
+            assert person1.next != null;
+            person1.next = person1.next.next;
+            return dummy.next;
+        }
     }
 }
-
 
 // ListNode class
 class ListNode {
