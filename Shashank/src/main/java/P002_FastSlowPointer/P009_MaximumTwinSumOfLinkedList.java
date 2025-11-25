@@ -1,7 +1,7 @@
 package src.main.java.P002_FastSlowPointer;
 
-// https://leetcode.com/problems/palindrome-linked-list/description/
-public class P008_PalindromeLinkedList {
+// https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/description/
+public class P009_MaximumTwinSumOfLinkedList {
 
     static class ListNode {
         int val;
@@ -21,7 +21,7 @@ public class P008_PalindromeLinkedList {
     }
 
     static class Solution {
-        public boolean isPalindrome(ListNode head) {
+        public int pairSum(ListNode head) {
             ListNode slow = head, fast = head;
             while (fast != null && fast.next != null) {
                 slow = slow.next;
@@ -30,16 +30,17 @@ public class P008_PalindromeLinkedList {
 
             ListNode p2 = reverseLL(slow);
             ListNode p1 = head;
+            int max = 0;
 
             while (p2 != null && p1 != null) {
-                if (p1.val != p2.val)
-                    return false;
-
+                int sum = p1.val + p2.val;
+                if (sum > max)
+                    max = sum;
                 p1 = p1.next;
                 p2 = p2.next;
             }
 
-            return true;
+            return max;
         }
 
         public ListNode reverseLL(ListNode head) {
