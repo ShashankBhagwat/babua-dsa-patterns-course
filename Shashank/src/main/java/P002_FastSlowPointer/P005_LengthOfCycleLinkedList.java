@@ -1,5 +1,6 @@
 package src.main.java.P002_FastSlowPointer;
 
+// https://www.geeksforgeeks.org/dsa/find-length-of-loop-in-linked-list/
 public class P005_LengthOfCycleLinkedList {
 
     static class Node {
