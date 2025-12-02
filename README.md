@@ -13,7 +13,8 @@ Instead of solving 1000 random questions, you'll learn how to **think in pattern
 [Babua Sheet](https://docs.google.com/spreadsheets/d/1T3vPcwlWdMRMYSf8IxQCKb3gX7rGzDss-ZU-R4XFM14/edit?usp=sharing)
 
 ## 🚀 Babua DSA Patterns Revision Sheet 2025
-[Babua DSA Patterns Sheet 2025](https://github.com/team-codebug/babua-dsa-patterns-course/blob/main/Babua%20DSA%20Patterns%20Course%202025%20-%20Revision%20Sheet.xlsx)
+[Babua DSA Patterns Sheet 2025](https://docs.google.com/spreadsheets/d/1RESAUKlHFjdCrEO9YDySoHaHnn_FMdrAgSV9NdZdVos/edit?usp=sharing)
+- Make a copy of this sheet to start using the DSA Revision sheet
 - 🧠 **Revise Each thing at least 4 times** - Use the revision sheet to practice theory and questions multiple times so that you don't forget
 
 ## 📘 About the Course
