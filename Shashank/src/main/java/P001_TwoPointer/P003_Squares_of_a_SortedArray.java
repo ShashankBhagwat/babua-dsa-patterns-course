@@ -7,30 +7,29 @@ public class P003_Squares_of_a_SortedArray {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(Arrays.toString(solution.sortedSquares(new int[]{-7, -3, 2, 3, 11})));
+        System.out.println(Arrays.toString(solution.sortedSquares(new int[]{-5, -3, -2, -1})));
     }
 
     static class Solution {
         public int[] sortedSquares(int[] nums) {
-            int left = 0;
-            int right = nums.length - 1;
-            int resultIndex = nums.length - 1;
+            int left = 0, resIndex = nums.length - 1, right = nums.length - 1;
             int[] res = new int[nums.length];
 
-            while (resultIndex >= 0) {
-                int leftSquare = nums[left] * nums[left];
-                int rightSquare = nums[right] * nums[right];
+            while (resIndex >= 0) {
+                int iVal = nums[left] * nums[left];
+                int jVal = nums[right] * nums[right];
 
-                if (leftSquare > rightSquare) {
-                    res[resultIndex] = leftSquare;
+                if (iVal > jVal) {
+                    res[resIndex] = iVal;
                     left++;
 
                 } else {
-                    res[resultIndex] = rightSquare;
+                    res[resIndex] = jVal;
                     right--;
                 }
-                resultIndex--;
+                resIndex--;
             }
+
             return res;
         }
     }
